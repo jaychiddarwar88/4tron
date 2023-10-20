@@ -9,12 +9,12 @@ def sendmail(receiver, subject, mailcontent):
     # '''
 
     #The mail addresses and password
-    sender_address = '4tronstudios@gmail.com'
-    sender_pass = 'vishwajeetjay123'
+    sender_address = ''
+    sender_pass = ''
     #Setup the MIME
     message = MIMEMultipart()
     message['From'] = sender_address
-    message['To'] = '4tronstudios@gmail.com'
+    message['To'] = ''
     message['Subject'] = subject   #The subject line
     #The body and the attachments for the mail
     message.attach(MIMEText(mailcontent, 'plain'))
@@ -23,6 +23,6 @@ def sendmail(receiver, subject, mailcontent):
     session.starttls() #enable security
     session.login(sender_address, sender_pass) #login with mail_id and password
     text = message.as_string()
-    session.sendmail(sender_address, '4tronstudios@gmail.com', text)
+    session.sendmail(sender_address, '', text)
     session.quit()
     return "done"
