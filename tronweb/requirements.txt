@@ -1,0 +1,9 @@
+Django
+django-heroku
+dj-database-url
+dj-static
+gunicorn
+Pillow
+bleach
+psycopg2
+whitenoise

@@ -1,0 +1,430 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>4tron Studios</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{% static 'styles/bootstrap.min.css' %}">
+    <!-- style css -->
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="{% static 'styles/responsive.css' %}">
+    <!-- fevicon -->
+    <link rel="icon" href="{% static 'images/fevicon.png' %}" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <style type="text/css">
+        @font-face {
+            font-family: 'SpaceMission-rgyw9';
+            src: url(' {% static 'fonts/SpaceMission-rgyw9.otf' %} ');
+        }
+        @font-face {
+            font-family: 'Cairo-Bold';
+            src: url(' {% static 'Cairo-Bold.ttf' %} ');
+        }
+        .video-container {
+            overflow: hidden;
+            position: relative;
+            width:100%;
+        }
+
+        .video-container::after {
+            padding-top: 56.25%;
+            display: block;
+            content: '';
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<!-- body -->
+<body class="main-layout">
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header-top">
+            <div class="header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                            <div class="full">
+                                <div class="center-desk">
+                                    <div class="logo">
+                                        <a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt="#" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                            <ul class="top_icon">
+                                <li><a href="https://www.facebook.com/vishwajeet.jadhav.56481" target="_blank"><img src="{% static 'icon/fb.png' %}"></a></li>
+                                <li><a href="https://www.twitter.com" target="_blank"><img src="{% static 'icon/tw.png' %}"></a></li>
+                                <li><a href="https://www.instagram.com/vishwajeetrahuljadhav/" target="_blank"><img src="{% static 'icon/lin(2).png' %}"></a></li>
+                                <li><a href="mailto: vishwajeetjadhav982@gmail.com" target="_blank"><img src="{% static 'icon/email.png' %}"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end header inner -->
+            <!-- end header -->
+            <section class="slider_section">
+                <div class="banner_main">
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-2 padding_left0">
+                                <div class="menu-area">
+                                <div class="limit-box">
+                                    <nav class="main-menu">
+                                        <ul class="menu-area-main">
+                                            <li class="active"> <a href="#game">Game</a> </li>
+                                            <li> <a href="#software">Software</a> </li>
+                                            <li> <a href="#about">About</a> </li>
+                                            <li> <a href="#testimonial">Creaters</a> </li>
+                                            <li> <a href="#contact">Report</a> </li>
+                                           
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 ">
+                                <div class="text-bg">
+                                    <h1 style="font-family: 'SpaceMission-rgyw9';">4tron<br> studios</h1>
+                                    <span>Innovate your world with full of joy and entertainment<br>Join with us </span>
+                                    <a href="https://drive.google.com/file/d/1TEuggSCze7wxDrmHI4c6tAKCD3mLXJ0G/view" target="_blank">download</a>
+                                </div>
+                            </div>
+                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+                                <div class="text-img">
+                                   <figure><img src="{% static 'images/img.png' %}" alt="#"/></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </section>
+        </div>
+    </header>
+    <!-- our -->
+    <div id="games" class="our">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2 style="font-family: 'Cairo', sans-serif;">Our Games</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 margin_bottom">
+                    <div class="row">
+
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            <div class="two-box">
+                                <figure><img src="{% static 'images/our-image1.jpg' %}" alt="#" /></figure>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+
+                            <div class="Games">
+                                <h3>Angry Ball</h3>
+                                <p>Details will be shared soon</p>
+                                <a href="#">Coming Soon</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 margin_bottom">
+                    <div class="row">
+
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            <div class="two-box">
+                                <figure><img src="{% static 'images/our-image2.jpg' %}" alt="#" /></figure>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                            <div class="Games">
+                                <h3>Trial</h3>
+                                <p>The game we developed is for trial base to check the interaction with the user so find the bugs in the game and report us through website</p>
+                                <a href="https://drive.google.com/file/d/1TEuggSCze7wxDrmHI4c6tAKCD3mLXJ0G/view" target="_blank">Download for Android</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end our -->
+    <!-- We are -->
+    <div id="software" class="We_are">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2 style="font-family: 'Cairo', sans-serif;">Software</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                     <div class="box_bg">
+                         <div class="box_bg_img">
+                             <figure><img src="{% static 'images/soft.jpg' %}"></figure>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 border_right">
+                     <div class="box_text">
+                         <p>Unity is a cross-platform game engine developed by Unity Technologies, first announced and released in June 2005 at Apple Inc.'s Worldwide Developers Conference as a Mac OS X-exclusive game engine. As of 2018, the engine had been extended to support more than 25 platforms. The engine can be used to create three-dimensional, two-dimensional, virtual reality, and augmented reality games, as well as simulations and other experiences.[4][5] The engine has been adopted by industries outside video gaming, such as film, automotive, architecture, engineering and construction.</p>
+                         <p>The Unreal Engine is a game engine developed by Epic Games, first showcased in the 1998 first-person shooter game Unreal. Although initially developed for first-person shooters, it has been used in a variety of genres, including platformers, fighting games, and MMORPGs, and has seen adoption by other markets, most notably the film and television industry. Written in C++, the Unreal Engine features a high degree of portability, supporting a wide range of platforms.</p>
+                         <!-- <a href="#">Read more</a> -->
+                     </div>
+                 </div> 
+            </div>
+        </div>
+    </div>
+    <!-- end We are -->
+    <!-- about  -->
+    <div id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2 style="font-family: 'Cairo', sans-serif;">About Our Game</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="about-box">
+                        <figure>
+                        <div class="video-container">
+                            <iframe width="1120" height="630" src="https://www.youtube.com/embed/c8xgJr3pqpo?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        </figure>
+                        <p> 
+                            <br> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end abouts -->
+    <!-- testimonial -->
+    <div id="testimonial" class="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2 style="font-family: 'Cairo', sans-serif;">Creaters</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 offset-md-2">
+                    <div class="row box">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                            <div class="testimonial_box">
+                                <figure><a href="https://www.instagram.com/vishwajeetrahuljadhav/" target="_blank"><img src="{% static 'images/test2.png' %}" alt="#" /></a></figure>
+                                <h3>Vishwajeet Jadhav</h3>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                            <div class="testimonial_box">
+                                <figure><a href="https://www.instagram.com/jay_chiddarwar/" target="_blank"><img src="{% static 'images/test3.png' %}" alt="#" /></a></figure>
+                                <h3>Jay Chiddarwar</h3>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                            <div class="testimonial_box">
+                                <figure><a href="https://www.instagram.com/dr.shrikhande/" target="_blank"><img src="{% static 'images/test1.png' %}" alt="#" /></a></figure>
+                                <h3>Abhishek Shrikhande</h3>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                            <div class="testimonial_box">
+                                <figure><a href="https://www.instagram.com/i_am_piyush55/" target="_blank"><img src="{% static 'images/test4.png' %}" alt="#" /></a></figure>
+                                <h3>Piyush Warke</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end testimonial -->
+    <!-- contact -->
+    <div id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form id = "queryform" class="contact_bg">
+                        <input type="hidden" id="csrfmiddlewaretoken" name="csrfmiddlewaretoken" value="{{ csrf_token }}"/>
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <input class="contactus" placeholder="Name" type="text" name="qname" id = "qname">
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <input class="contactus" placeholder="Phone" type="text" name="qphoneno" id = "qphoneno">
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <input class="contactus" placeholder="Email" type="email" name="qemail" id = "qemail">
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <textarea class="textarea" placeholder="Message" type="text" name="qmsg" id = "qmsg"></textarea>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <button type="submit" class="send">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+		document.addEventListener('DOMContentLoaded' , ()=> {
+			document.querySelector("#queryform").onsubmit = () => {
+			var request = new XMLHttpRequest();
+            request.open('POST', '/postquery');
+            var token = document.querySelector('#csrfmiddlewaretoken').value;
+            request.setRequestHeader("X-CSRFToken", token);
+			var qname = document.querySelector("#qname").value ;
+			var qphoneno = document.querySelector("#qphoneno").value ;
+			var qemail = document.querySelector("#qemail").value ;
+			var qmsg = document.querySelector("#qmsg").value ;
+			
+            var data = new FormData();
+			request.onload = ()=>{
+				var response = request.responseText;
+				if( response == 'success'){
+					console.log("success");
+                    document.getElementById('qname').value = ''
+                    document.getElementById('qphoneno').value = ''
+                    document.getElementById('qemail').value = ''
+                    document.getElementById('qmsg').value = ''
+				}
+				else{
+					console.log("fail");
+				}
+			}
+			data.append('qname', qname);
+			data.append('qphoneno', qphoneno);
+			data.append('qemail', qemail);
+			data.append('qmsg', qmsg);
+			request.send(data);
+            return false;
+		}
+		})
+	</script>
+    <!-- end contact -->
+    <!-- footer -->
+    <footr>
+        <div class="footer ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Newsletter</h2>
+                    </div>
+                    <div class="col-md-10 offset-md-1">
+                        <form class="news">
+                            <input class="newslatter" placeholder="Enter Your Email" type="text" name="Enter Your Email">
+                            <button class="submit">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
+                                <div class="address">
+                                    <ul class="social_link">
+                                        <li><a href="https://www.facebook.com/vishwajeet.jadhav.56481"><img src="{% static 'icon/fb.png' %}"></a></li>
+                                        <li><a href="https://www.twitter.com"><img src="{% static 'icon/tw.png' %}"></a></li>
+                                        <li><a href="https://www.instagram.com/vishwajeetrahuljadhav/"><img src="{% static 'icon/lin(2).png' %}"></a></li>
+                                            
+                                    </ul>
+                                    <a href="index.html"> <img src="{% static 'images/logo.png' %}" alt="logo"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="address">
+                                    <h3>Quick links</h3>
+                                    <ul class="Menu_footer">
+                                        <li class="active"> <img src="{% static 'images/3.png' %}" alt="#"> <a href="#game">Game</a> </li>
+                                        <li><img src="{% static 'images/3.png' %}" alt="#"> <a href="#software">Software</a> </li>
+                                        <li><img src="{% static 'images/3.png' %}" alt="#"> <a href="#about">About</a> </li>
+                                        <li><img src="{% static 'images/3.png' %}" alt="#"> <a href="#testimonial"> Creaters</a> </li>
+                                        <li><img src="{% static 'images/3.png' %}" alt="#"> <a href="#contact">Report</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-3 col-md-6 col-sm-6 ">
+                                <div class="address">
+                                    <h3>Contact us </h3>
+                                    <ul class="loca">
+                                        <li>
+                                            <a href="#"><img src="{% static 'icon/loc.png' %}" alt="#" /></a>Pune 411033
+                                            <br>India 
+                                        </li>
+                                        <li><a href = "mailto: jaychiddarwar@gmail.com"><img src="{% static 'icon/email.png' %}" alt="#" />Jay Chiddarwar</a></li>
+                                        <li><a href = "mailto: vishwajeetjadhav982@gmail.com"><img src="{% static 'icon/email.png' %}" alt="#" />Vishwajeet Jadhav</a> </li>
+                                        <li>
+                                            <a href="#"><img src="{% static 'icon/call.png' %}" alt="#" />+91 9730188324 <br>Vishwajeet Jadhav</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p><span style="float: left;">Total Visit : {{ totalvisit }} </a><span></p>
+                    <p>
+                        <a href="https://github.com/jaychiddarwar88">made by Jay Chiddarwar with </a><img src="{% static 'icon/heart.png' %}" alt="#" />
+                        <span style="float: right;">Email : <a href = "mailto: jaychiddarwar@gmail.com">Dev Contact</a><span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footr>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="{% static 'scripts/jquery.min.js' %}"></script>
+    <script src="{% static 'scripts/popper.min.js' %}"></script>
+    <script src="{% static 'scripts/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'scripts/jquery-3.0.0.min.js' %}"></script>
+    <script src="{% static 'scripts/plugin.js' %}"></script>
+    <!-- sidebar -->
+    <script src="{% static 'scripts/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+    <script src="{% static 'scripts/custom.js' %}"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+</body>
+
+</html>
